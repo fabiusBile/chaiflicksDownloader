@@ -11,7 +11,7 @@ const episodes = [];
 
 for (let i = 1; i <= numberOfSeasons; i++) {
 
-    const url = `${baseUrl}season:1`
+    const url = `${baseUrl}season:${i}`
     const page = await browser.newPage();
     await page.setCookie(...cookies);
     await page.goto(url);
